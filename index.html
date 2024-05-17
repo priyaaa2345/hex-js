@@ -5,11 +5,53 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      h1{
+        color:orange;
+      }
+      .title{
+        color: aqua;
+      }
+    </style>
   </head>
   <body>
+    <h1> welcome to the app </h1>
+    <h2 id="Sub heading"> Welcome again..</h2>
+    <h3 class="title">Welcome to the app</h3>
+    <h4 class ="title"> Welcome to the app 4</h4>
+    <h5 class="="title">welcome to the app 5</h5>
+    <h6> welcome to the app</h6>
+<!-- // onclick listens for click event -->
+    <button onclick="clicked()">Click</button> 
     <!-- <script
     src = "fundamentals.js"></script>  -->
-    <script src="loops.js"></script>
+    <!-- <script src="loops.js"></script> -->
+    <br />
+    <br />
+ 
+    <h3>Check for driving test</h3>
+    <input type="text" placeholder="Enter your age" />
+    <button>Check</button>
+    
+    <script>
+      var h2=document.getElementById("Sub Heading"); // can tag one of them
+      console.log(h2.innerText);
+      h2.innerText = "ths is super cool";  // updating html
+
+      var title = document.getElementsByClassName("title") // can tag Xle items
+      console.log(title);
+
+      for (title of titles){
+        console.log(title.innerText);
+      }
+      var count=0;
+      function clicked(){
+        count++;
+        console.log(count);
+       
+      }
+      console.log(count)
+
     </script>
   </body>
 </html>

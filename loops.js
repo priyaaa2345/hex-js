@@ -34,6 +34,7 @@ const details={
     age:40,
     power: 's'
 };
+
 // for(let key in avenger){
 //     console.log(key,avenger[key])
 // }
@@ -47,4 +48,13 @@ const details={
 
 // to solve this use default value
 
+const heights=[1,2,3,4];
+heights[0]=90;  // value updates
+// height=80 //error
+console.log(heights);
 
+
+var x1=3;
+var x2='5';
+console.log(x1+x2);
+console.log(x1-x2);
