@@ -31,9 +31,26 @@
  
     <h3>Check for driving test</h3>
     <input type="text" placeholder="Enter your age" />
-    <button>Check</button>
     
-    <script>
+<button onclick="checkAge()">Check</button>
+<h3 id = "result"></h3>>
+ 
+<script>
+  // let clickedcount=0;
+  // function clicked(){
+  //   clickedcount++;
+  //   document.getElementById(
+  //     "clicked-times"
+  //   ).innerText= "You clicked the button" = clickedcount
+  // }
+      function checkAge(){
+        const age = document.getElementById("age");
+        document.getElementById("result").innerText=
+        age>=18 ?"you are eligile" : "you are  not eligible";
+      }
+</script>
+
+    <!-- <script>
       var h2=document.getElementById("Sub Heading"); // can tag one of them
       console.log(h2.innerText);
       h2.innerText = "ths is super cool";  // updating html
@@ -52,6 +69,6 @@
       }
       console.log(count)
 
-    </script>
+    </script> -->
   </body>
 </html>

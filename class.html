@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Car{
+            constructor(name,engine,wheels,doors) {
+                this.name=name;
+                this.engine=engine;
+                this.wheels=wheels;
+                this.doors=doors;
+            }
+            horn(){
+                return `${this.name} says vroom vroom`;
+            }
+        }
+        ferrari=new Car("ferrari","v8",4,4);
+        console.log(ferrari);
+        console.log(typeof Car, typeof ferrari)
+    </script>
+</body>
+</html>
